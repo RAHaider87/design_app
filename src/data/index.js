@@ -50,6 +50,7 @@ export const Colors = {
     denim_Blue: "#79BAEC",
     cornflower_Blue: "#6495ED",
     purple_Blue: "#728FCE",
+    light_Blue: "#F5FBFF",
     //////////////
     /////////Grays
     //////////////
