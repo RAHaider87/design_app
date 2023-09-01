@@ -47,7 +47,7 @@ export const Colors = {
     denim_Blue: "#131E3A",
     jay_Blue: "#2B547E",
     steel_Blue: "#4682B4",
-    denim_Blue: "#79BAEC",
+    // denim_Blue: "#79BAEC",
     cornflower_Blue: "#6495ED",
     purple_Blue: "#728FCE",
     light_Blue: "#F5FBFF",
@@ -283,7 +283,7 @@ export const navlinks = [
 
         title: "Cold Flu",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -291,17 +291,15 @@ export const navlinks = [
 
         title: "Breast Cancer",
 
-        slug: "#",
+        slug: "#"
 
       },
-
-      ,
 
       {
 
         title: "Allergies",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -309,7 +307,7 @@ export const navlinks = [
 
         title: "Mental Health",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -317,7 +315,7 @@ export const navlinks = [
 
         title: "Rheumatoid Arthritis",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -325,7 +323,7 @@ export const navlinks = [
 
         title: "Diabetes",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -333,7 +331,7 @@ export const navlinks = [
 
         title: "Vitamins & Supplement",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -341,7 +339,7 @@ export const navlinks = [
 
         title: "Pregnancy",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -363,7 +361,7 @@ export const navlinks = [
 
         title: "Community",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -371,17 +369,15 @@ export const navlinks = [
 
         title: "Team",
 
-        slug: "#",
+        slug: "#"
 
       },
-
-      ,
 
       {
 
         title: "Mission/Vision",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -389,7 +385,7 @@ export const navlinks = [
 
         title: "Legal Services",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -397,7 +393,7 @@ export const navlinks = [
 
         title: "Cookies/Privacy",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -405,7 +401,7 @@ export const navlinks = [
 
         title: "Terms of Use",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -413,7 +409,7 @@ export const navlinks = [
 
         title: "On Call Services",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -433,7 +429,7 @@ export const navlinks = [
 
         title: "Life & Workskills",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -441,17 +437,15 @@ export const navlinks = [
 
         title: "Job Search",
 
-        slug: "#",
+        slug: "#"
 
       },
-
-      ,
 
       {
 
         title: "Productivity",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -459,7 +453,7 @@ export const navlinks = [
 
         title: "Career",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -467,7 +461,7 @@ export const navlinks = [
 
         title: "Savings",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -487,7 +481,7 @@ export const navlinks = [
 
         title: "Parenting",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -495,17 +489,15 @@ export const navlinks = [
 
         title: "Motherhood",
 
-        slug: "#",
+        slug: "#"
 
       },
-
-      ,
 
       {
 
         title: "Parenting News",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -513,7 +505,7 @@ export const navlinks = [
 
         title: "Single Parent",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -521,17 +513,15 @@ export const navlinks = [
 
         title: "Marriage",
 
-        slug: "#",
+        slug: "#"
 
       },
-
- 
 
       {
 
         title: "Work/Family Balance",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -551,7 +541,7 @@ export const navlinks = [
 
         title: "Latest Recipe",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -559,7 +549,7 @@ export const navlinks = [
 
         title: "Cooking Tips/Trends",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -567,7 +557,7 @@ export const navlinks = [
 
         title: "Diet Plans",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -575,7 +565,7 @@ export const navlinks = [
 
         title: "Good Restaurants",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -583,7 +573,7 @@ export const navlinks = [
 
         title: "Cooking Classses",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -603,7 +593,7 @@ export const navlinks = [
 
         title: "Mind",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -611,7 +601,7 @@ export const navlinks = [
 
         title: "Sleep",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -619,7 +609,7 @@ export const navlinks = [
 
         title: "Exercise",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -627,7 +617,7 @@ export const navlinks = [
 
         title: "Self Care",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -647,7 +637,7 @@ export const navlinks = [
 
         title: "Sexual Health",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -655,7 +645,7 @@ export const navlinks = [
 
         title: "Sex Toys ",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -663,7 +653,7 @@ export const navlinks = [
 
         title: "Dating",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -671,7 +661,7 @@ export const navlinks = [
 
         title: "Dating Communities",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -691,7 +681,7 @@ export const navlinks = [
 
         title: "Horoscope",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -699,7 +689,7 @@ export const navlinks = [
 
         title: "Decor & styling",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -707,7 +697,7 @@ export const navlinks = [
 
         title: "Travel",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -715,7 +705,7 @@ export const navlinks = [
 
         title: "Home & Garden",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -723,7 +713,7 @@ export const navlinks = [
 
         title: "Cleaning & Organization",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -743,7 +733,7 @@ export const navlinks = [
 
         title: "Fashion Accessories",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -751,7 +741,7 @@ export const navlinks = [
 
         title: "Capsule Wardrobe",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -759,7 +749,7 @@ export const navlinks = [
 
         title: "Celebrity Style",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -767,7 +757,7 @@ export const navlinks = [
 
         title: "Body & Skin care",
 
-        slug: "#",
+        slug: "#"
 
       },
 
@@ -775,7 +765,7 @@ export const navlinks = [
 
         title: "Hair Care ",
 
-        slug: "#",
+        slug: "#"
 
       },
 
