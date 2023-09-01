@@ -1,6 +1,5 @@
 import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, Grid, List, ListItemText, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-
 import logoImage from '../../naveBarLogo/NavLogo.png';
 import { Colors } from '../../data/index';
 import { heroListing } from '../../data';
