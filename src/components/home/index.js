@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Typography } from "@mui/material";
+import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Container, Grid, List, ListItemText, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 import logoImage from '../../naveBarLogo/NavLogo.png';
@@ -6,48 +6,14 @@ import { Colors } from '../../data/index';
 import { heroListing } from '../../data';
 import { activityLog } from '../../data';
 import { articles } from '../../data';
-
-export const AppbarHeader = styled()(() => ({
-    outerContainer: {
-        width: '100%',
-        maxWidth: 1720,
-        minHeight: 803,
-        padding: '96px 100px',
-        gap: '64px',
-        borderRadius: '16px',
-        backgroundColor: '#f0f0f0',
-        margin: '0 auto',
-    },
-    innerContainer: {
-        width: '100%',
-        maxWidth: 1512,
-        height: 'auto',
-        padding: '0px 32px',
-        gap: '50px',
-    },
-    subContainer: {
-        width: '100%',
-        maxWidth: 1448,
-        height: 'auto',
-        gap: '50px',
-    },
-    heading: {
-        fontSize: 24,
-        fontWeight: 'bold',
-    },
-    gridItem: {
-        backgroundColor: '#fff',
-        padding: '20px',
-        borderRadius: '8px',
-        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-    },
-}));
-
-
+import { FooterTitle, SubscribeTf} from '../../style/home';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import SendIcon from '@mui/icons-material/Send';
 
 
 export default function Home() {
-
 
     return (
         <>
@@ -177,23 +143,312 @@ export default function Home() {
 
                 </Grid> */}
 
-                <Container className={AppbarHeader.outerContainer}>
-                    <Typography className={AppbarHeader.heading}>Heading</Typography>
-                    <Box className={AppbarHeader.innerContainer}>
-                        <Box className={AppbarHeader.subContainer}>
+                <Container sx={{ backgroundColor: Colors.light_Blue, width: '100%', maxWidth: 1720, gap: '64px', borderRadius: '16px' }}>
+
+                    <Typography sx={{ fontSize: 24, fontWeight: 'bold' }}>Latest Articles</Typography>
+
+                    <Box sx={{ width: '100%', maxWidth: 1512, height: 'auto', gap: '50px', }}>
+                        <Box sx={{ width: '100%', maxWidth: 1448, height: 'auto', gap: '50px', }}>
                             <Grid container spacing={2}>
-                                <Grid item xs={12} sm={6}>
-                                    <div className={AppbarHeader.gridItem}>Grid Item 1</div>
+                                <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+                                    <Box style={{ padding: '10px' }}>
+                                        <img src={articles[0].image} alt="Logo" width='525px' height='300px' />
+                                        <Typography sx={{ color: Colors.denim_Blue, mt: 3, mb: 1 }}>
+                                            {articles[0].category}
+                                        </Typography>
+                                        <Typography>
+                                            {articles[0].title}
+                                        </Typography>
+                                    </Box>
                                 </Grid>
-                                <Grid item xs={12} sm={6}>
-                                    <div className={AppbarHeader.gridItem}>Grid Item 2</div>
+
+                                <Grid item xs={6} sm={6} md={6} lg={6} xl={6} >
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px' }}>
+                                        <Box>
+                                            <img src={articles[1].image} alt="Logo" width='175px' height='100px' />
+                                        </Box>
+                                        <Box>
+                                            <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                                {articles[1].category}
+                                            </Typography>
+                                            <Typography sx={{ ml: 3 }}>
+                                                {articles[1].title}
+                                            </Typography>
+                                        </Box>
+                                    </Box>
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px' }}>
+                                        <Box>
+                                            <img src={articles[2].image} alt="Logo" width='175px' height='100px' />
+                                        </Box>
+                                        <Box>
+                                            <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                                {articles[2].category}
+                                            </Typography>
+                                            <Typography sx={{ ml: 3 }}>
+                                                {articles[2].title}
+                                            </Typography>
+                                        </Box>
+                                    </Box>
+                                    <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '10px' }}>
+                                        <Box>
+                                            <img src={articles[3].image} alt="Logo" width='175px' height='100px' />
+                                        </Box>
+                                        <Box>
+                                            <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                                {articles[3].category}
+                                            </Typography>
+                                            <Typography sx={{ ml: 3 }}>
+                                                {articles[3].title}
+                                            </Typography>
+                                        </Box>
+                                    </Box>
                                 </Grid>
                             </Grid>
                         </Box>
                     </Box>
                 </Container>
-            </Box >
-        </>
 
+            </Box >
+
+            <Box sx={{ background: Colors.black, color: Colors.white, p: { xs: 4, md: 10 }, pt: 12, pb: 12, fontSize: { xs: "12px", md: "14px" } }}>
+                <Grid container spacing={2} justifyContent='center' >
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1} >
+                        <FooterTitle variant="body1">HEALTH</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    About Us
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Order traking
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Privacy &amp; Policy
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Term &amp; Conditions
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">ABOUT US</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Login
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Cart
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Account
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Wishlist
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">CAREER & FINANCE</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    About Us
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Order traking
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Privacy &amp; Policy
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Term &amp; Conditions
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1} >
+                        <FooterTitle variant="body1">FAMILY</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Login
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Cart
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Account
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Wishlist
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1} >
+                        <FooterTitle variant="body1">FOOD</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    About Us
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Order traking
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Privacy &amp; Policy
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Term &amp; Conditions
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">WELLNESS/FITNESS</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Login
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Cart
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Account
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Wishlist
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+                    
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">SEX & RELATIONSHIP</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Login
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Cart
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Account
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Wishlist
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">LIFESTYLE</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    About Us
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Order traking
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Privacy &amp; Policy
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Term &amp; Conditions
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                    <Grid item xs={4} sm={4} md={3} lg={3} xl={1.5} >
+                        <FooterTitle variant="body1">BEAUTY AND STYLE</FooterTitle>
+                        <List>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Login
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Cart
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    My Account
+                                </Typography>
+                            </ListItemText>
+                            <ListItemText>
+                                <Typography lineHeight={2} variant="caption2">
+                                    Wishlist
+                                </Typography>
+                            </ListItemText>
+                        </List>
+                    </Grid>
+
+                </Grid>
+            </Box>
+        </>
     )
 }

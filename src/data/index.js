@@ -47,7 +47,7 @@ export const Colors = {
     denim_Blue: "#131E3A",
     jay_Blue: "#2B547E",
     steel_Blue: "#4682B4",
-    // denim_Blue: "#79BAEC",
+    denim_Blue: "#79BAEC",
     cornflower_Blue: "#6495ED",
     purple_Blue: "#728FCE",
     light_Blue: "#F5FBFF",
