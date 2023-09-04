@@ -68,16 +68,16 @@ export default function Home() {
 
             <Box sx={{ justifyContent: 'center', alignItems: 'center', height: '100%', width: '78%', ml: '10%', mt: '50px', mb: '50px' }}>
                 <Grid container>
-                    <Grid xs={5} sm={5} md={5} lg={5} xl={5} width='623px' height='614px' sx={{ backgroundColor: Colors.dove_gray }}>
+                    <Grid xs={5} sm={5} md={5} lg={5} xl={5} width='623px' height='614px' sx={{ backgroundColor: Colors.green }}>
                         <Box  >
-                            <img src={heroListing[0].image} alt="Logo" width='623px' height='614px' />
+                            <img src={heroListing[0].image} alt="Logo" style={{width: '100%' ,height: '614px'}}  />
                             {/* <Typography>{heroListing[0].image}</Typography> */}
 
                         </Box >
                     </Grid>
                     <Grid xs={3} sm={3} md={3} lg={3} xl={3} sx={{ width: '360px', height: '614px', backgroundColor: Colors.jay_Blue }}>
 
-                        <Box sx={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', color: Colors.white, p: 1, backgroundColor: Colors.denim_Blue, width: '360px', height: '598px' }}>
+                        <Box sx={{ flexDirection: 'column', display: 'flex', justifyContent: 'center', color: Colors.white, p: 1, backgroundColor: Colors.denim_Blue, width: '97%', height: '598px' }}>
 
                             <Typography variant="title" sx={{ width: '50%', mb: 2, height: '5%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: Colors.white, color: Colors.black, }} >{heroListing[0].category}</Typography>
                             <Typography variant="h5" sx={{ mb: 2 }}>{heroListing[0].title}</Typography>
@@ -88,10 +88,10 @@ export default function Home() {
                     </Grid>
                     <Grid xs={4} sm={4} md={4} lg={4} xl={4} sx={{}}>
                         <Box sx={{ display: 'flex', justifyContent: 'right' }} >
-                            <img src={heroListing[1].image} alt="Logo" style={{ width: '472px', height: '294px' }} />
+                            <img src={heroListing[1].image} alt="Logo" style={{ width: '95%', height: '294px' }} />
                         </Box >
                         <Box sx={{ display: 'flex', justifyContent: 'right', mt: 3 }}>
-                            <img src={heroListing[2].image} alt="Logo" style={{ width: '472px', height: '294px' }} />
+                            <img src={heroListing[2].image} alt="Logo" style={{ width: '95%', height: '294px' }} />
                         </Box >
                     </Grid>
                 </Grid>
@@ -142,20 +142,20 @@ export default function Home() {
 
                 </Grid> */}
 
-                <Container sx={{ backgroundColor: Colors.light_Blue, width: '100%', maxWidth: 1720, gap: '64px', borderRadius: '16px' }}>
+                <Container sx={{ backgroundColor: Colors.light_Blue, width: '100%', maxWidth: 1720, gap: '64px', borderRadius: '16px', paddingTop:'5%', paddingBottom: '5%' }}>
 
-                    <Typography sx={{ fontSize: 24, fontWeight: 'bold' }}>Latest Articles</Typography>
+                    <Typography sx={{marginLeft: '7%', fontSize: 24, fontWeight: 'bold' }}>Latest Articles</Typography>
 
                     <Box sx={{ width: '100%', maxWidth: 1512, height: 'auto', gap: '50px', }}>
                         <Box sx={{ width: '100%', maxWidth: 1448, height: 'auto', gap: '50px', }}>
                             <Grid container spacing={2}>
                                 <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
                                     <Box style={{ padding: '10px' }}>
-                                        <img src={articles[0].image} alt="Logo" width='525px' height='300px' />
-                                        <Typography sx={{ color: Colors.denim_Blue, mt: 3, mb: 1 }}>
+                                        <img src={articles[0].image} alt="Logo"  style={{marginLeft: '12%', width: '90%'}}  />
+                                        <Typography sx={{ color: Colors.denim_Blue, mt: 3, mb: 1 ,marginLeft: '12%'}}>
                                             {articles[0].category}
                                         </Typography>
-                                        <Typography>
+                                        <Typography sx={{marginLeft: '12%'}}>
                                             {articles[0].title}
                                         </Typography>
                                     </Box>
@@ -170,7 +170,7 @@ export default function Home() {
                                             <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
                                                 {articles[1].category}
                                             </Typography>
-                                            <Typography sx={{ ml: 3 }}>
+                                            <Typography sx={{ ml: 3 ,marginRight: '15%'}}>
                                                 {articles[1].title}
                                             </Typography>
                                         </Box>
@@ -183,7 +183,7 @@ export default function Home() {
                                             <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
                                                 {articles[2].category}
                                             </Typography>
-                                            <Typography sx={{ ml: 3 }}>
+                                            <Typography sx={{ ml: 3 ,marginRight: '15%'}}>
                                                 {articles[2].title}
                                             </Typography>
                                         </Box>
@@ -196,7 +196,7 @@ export default function Home() {
                                             <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
                                                 {articles[3].category}
                                             </Typography>
-                                            <Typography sx={{ ml: 3 }}>
+                                            <Typography sx={{ ml: 3 ,marginRight: '15%'}}>
                                                 {articles[3].title}
                                             </Typography>
                                         </Box>
