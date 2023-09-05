@@ -1,8 +1,5 @@
 import styled from "@emotion/styled";
-import {
-  TextField,
-  Typography,
-} from "@mui/material";
+import { TextField, Typography } from "@mui/material";
 import { Colors } from "../../data/index";
 
 export const FooterTitle = styled(Typography)(() => ({
@@ -19,3 +16,4 @@ export const SubscribeTf = styled(TextField)(() => ({
     borderBottom: `1px solid ${Colors.denim_Blue}`,
   },
 }));
+
