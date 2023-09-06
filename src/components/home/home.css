@@ -35,5 +35,29 @@
     width: 100%;
     left: 736px;
     padding: 1;
+    background-color:#5E92E4;
     color: white;
 }
+
+/* sx={{ backgroundColor: Colors.light_Blue, width: '100%', maxWidth: '1720px', height: '803px', gap: '64px',justifyContent: 'center', alignItems: 'center', display: 'flex' }} */
+.latestArticalsOuterBox{
+  width: 100%;
+  max-width: 1720px;
+  height: 803px;
+  gap: 64px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* sx={{ display: 'flex',justifyContent:'center',alignItems:'center',width: '100%', maxWidth: '1448px', height: '514px', gap: '50px' ,margin: '47px auto'}} */
+.latestArticalsinnerBox{
+    width: 100%;
+    max-width: 1448px;
+    height: 514px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 47px auto;
+  }

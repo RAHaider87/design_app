@@ -1,4 +1,4 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { Colors } from '../../data/index';
 import { heroListing } from '../../data';
 import { activityLog } from '../../data';
@@ -25,12 +25,13 @@ export default function Home() {
                     {/* </Grid>
     <Grid xs={12} sm={12} md={3} lg={3} xl={3} sx={{ backgroundColor: Colors.jay_Blue }}> */}
 
-                    <Box className='outerbox' sx={{ backgroundColor: Colors.denim_Blue }} >
+                    <Box className='outerbox'  >
                         <Box className='innerbox' >
-                            <Typography className="heroListingCategory" variant="title" >{heroListing[0].category}</Typography>
-                            <Typography variant="h5" sx={{ mb: 2, fontFamily: "Roboto" }}>{heroListing[0].title}</Typography>
-                            <Typography variant="body" sx={{ fontFamily: "Roboto" }}>{heroListing[0].description}</Typography>
-                            <Typography className="heroListingButtonText" variant="body">{heroListing[0].buttonText}</Typography>
+                            <Typography className="heroListingCategory" variant="title" sx={{ textAlign: 'start' }} >{heroListing[0].category}</Typography>
+                            <Typography variant="Heading" sx={{ mb: 2, fontFamily: "Roboto",fontWeight:700, fontSize:'40px',lineHeight:'46.88px',textAlign: 'start' }}>{heroListing[0].title}</Typography>
+                            <Typography variant="body" sx={{ fontFamily: "Roboto", textAlign: 'start' }}>{heroListing[0].description}</Typography>
+                            {/* <Typography className="heroListingButtonText" variant="body">{heroListing[0].buttonText}</Typography> */}
+                            <Button variant="outlined" sx={{borderColor: Colors.white, color: Colors.white ,mt: 2 }}>{heroListing[0].buttonText}</Button>
                         </Box>
                     </Box >
                     {/* </Grid>
@@ -76,61 +77,61 @@ export default function Home() {
                     ))}
                 </Grid>
 
-                <Box sx={{ backgroundColor: Colors.light_Blue, width: '100%', maxWidth: '1720px', height: '803px', gap: '64px',  }}>
-                    <Box sx={{ maxWidth: '1512px', width: '100%', height: '611px',  gap: '50px',  }}>
-                        <Box sx={{ maxWidth: '1448px', width: '100%', height: '47px', }}>
-                            <Typography sx={{fontSize: '40px', fontWeight: 700, fontFamily: 'Roboto',  color: "black"  }}>Latest Articles</Typography>
+                <Box className='latestArticalsOuterBox' sx={{ backgroundColor: Colors.light_Blue }}>
+                    <Box sx={{ maxWidth: '1512px', width: '100%', height: '611px', gap: '50px' }}>
+                        <Box sx={{ maxWidth: '1448px', width: '100%', height: '47px', margin: '0 auto' }}>
+                            <Typography sx={{ mr: '71%', fontSize: '40px', fontWeight: 700, fontFamily: 'Roboto', color: "black" }}>Latest Articles</Typography>
                         </Box>
 
-                        <Box sx={{mt:'5%', display: 'flex',justifyContent:'center',alignItems:'center',width: '100%', maxWidth: '1448px', height: '514px', gap: '50px' }}>
-                            <Box sx={{ maxWidth: '699px', width: '100%', height: '514px', gap: '32px' }}>
+                        <Box className='latestArticalsinnerBox'>
+                            <Box sx={{ maxWidth: '699px', width: '100%', height: '514px', gap: '32px', justifyContent: 'start', alignItems: 'start' }}>
                                 <img src={articles[0].image} alt="Logo" style={{ marginLeft: '12%', width: '90%' }} />
-                                <Typography sx={{ color: Colors.denim_Blue, mt: 3, mb: 1, marginLeft: '12%' }}>
+                                <Typography sx={{ color: Colors.denim_Blue, mt: 3, mb: 1, marginLeft: '12%', textAlign: 'start' }}>
                                     {articles[0].category}
                                 </Typography>
-                                <Typography sx={{ marginLeft: '12%' }}>
+                                <Typography sx={{ marginLeft: '12%', textAlign: 'start', textAlign: 'start' }}>
                                     {articles[0].title}
                                 </Typography>
 
                             </Box>
                             <Box sx={{ maxWidth: '699px', width: '100%', height: '514px', gap: '32px' }}>
-                                <Box sx={{ display: 'flex',justifyContent:'center',alignItems:'center'}}>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Box>
                                         <img src={articles[1].image} alt="Logo" width='100%' height='100%' />
                                     </Box>
                                     <Box>
-                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1, textAlign: 'start' }}>
                                             {articles[1].category}
                                         </Typography>
-                                        <Typography sx={{ ml: 3, marginRight: '15%' }}>
+                                        <Typography sx={{ ml: 3, marginRight: '15%', textAlign: 'start' }}>
                                             {articles[1].title}
                                         </Typography>
                                     </Box>
                                 </Box>
 
-                                <Box sx={{ display: 'flex',justifyContent:'center',alignItems:'center'}}>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Box>
                                         <img src={articles[2].image} alt="Logo" width='100%' height='100%' />
                                     </Box>
                                     <Box>
-                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1, textAlign: 'start' }}>
                                             {articles[2].category}
                                         </Typography>
-                                        <Typography sx={{ ml: 3, marginRight: '15%' }}>
+                                        <Typography sx={{ ml: 3, marginRight: '15%', textAlign: 'start' }}>
                                             {articles[2].title}
                                         </Typography>
                                     </Box>
                                 </Box>
 
-                                <Box sx={{ display: 'flex',justifyContent:'center',alignItems:'center'}}>
+                                <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                                     <Box>
                                         <img src={articles[3].image} alt="Logo" width='100%' height='100%' />
                                     </Box>
                                     <Box>
-                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1 }}>
+                                        <Typography sx={{ color: Colors.denim_Blue, ml: 3, mb: 1, textAlign: 'start' }}>
                                             {articles[3].category}
                                         </Typography>
-                                        <Typography sx={{ ml: 3, marginRight: '15%' }}>
+                                        <Typography sx={{ ml: 3, marginRight: '15%', textAlign: 'start' }}>
                                             {articles[3].title}
                                         </Typography>
                                     </Box>

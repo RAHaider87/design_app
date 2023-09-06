@@ -4,7 +4,7 @@ import { Colors } from "../../data/index";
 
 export const FooterTitle = styled(Typography)(() => ({
   textTransform: "uppercase",
-  marginBottom: "1em",
+  fontFamily: 'Roboto'
 }));
 
 export const SubscribeTf = styled(TextField)(() => ({
