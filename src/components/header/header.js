@@ -1,10 +1,20 @@
 import { AppBar, Box, Button, Grid, Typography } from "@mui/material";
 import logoImage from '../../naveBarLogo/NavLogo.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation  } from 'react-router-dom';
 import Link from '@mui/material/Link';
 
 export default function Header() {
-    var navigate = useNavigate();
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    
+    const isRouteActive = (path) => {
+        console.log('location.pathname',location.pathname)
+        console.log('path',path)
+
+        return location.pathname === path;
+    };
+
     return (
         <AppBar sx={{ backgroundColor: '#FFFFFF', position: 'static', width: '100%', maxWidth: '1920px', margin: '0 auto' }}>
             {/* <Container> */}
@@ -15,36 +25,50 @@ export default function Header() {
                     </Grid>
 
                     <Grid item xs={12} sm={9} md={9} lg={9} xl={9} sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            <Link onClick={() => navigate('/')} underline="none" variant="inherit">
-                            Home
+                        <Typography variant="body1" sx={{ color: isRouteActive('/') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/')} underline="none" color="inherit">
+                                Home
                             </Link>
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Health
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            About Us
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Career & Finance
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Family
-                        </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                        <Link onClick={() => navigate('/food')} underline="none" variant="inherit">
-                            Food
+                        <Typography variant="body1" sx={{ color: isRouteActive('/health') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/health')} underline="none" color="inherit">
+                                Health
                             </Link>
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Wellness
+                        <Typography variant="body1" sx={{ color: isRouteActive('/aboutUs') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/aboutUs')} underline="none" color="inherit">
+                                About Us
+                            </Link>
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Sex & Relationship
+                        <Typography variant="body1" sx={{ color: isRouteActive('/career&finance') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/career&finance')} underline="none" color="inherit">
+                                Career & Finance
+                            </Link>
                         </Typography>
-                        <Typography variant="body1" sx={{ color: 'black' }}>
-                            Beauty
+                        <Typography variant="body1" sx={{ color: isRouteActive('/family') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/family')} underline="none" color="inherit">
+                                Family
+                            </Link>
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: isRouteActive('/food') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/food')} underline="none" color="inherit">
+                                Food
+                            </Link>
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: isRouteActive('/wellness') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/wellness')} underline="none" color="inherit">
+                                Wellness
+                            </Link>
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: isRouteActive('/sex&relationship') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/sex&relationship')} underline="none" color="inherit">
+                                Sex & Relationship
+                            </Link>
+                        </Typography>
+                        <Typography variant="body1" sx={{ color: isRouteActive('/beauty') ? '#FD6288' : 'black' }}>
+                            <Link onClick={() => navigate('/beauty')} underline="none" color="inherit">
+                                Beauty
+                            </Link>
                         </Typography>
                         {/* Other navigation items */}
                     </Grid>
