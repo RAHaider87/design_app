@@ -1,20 +1,24 @@
-import { AppBar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Divider, Grid, List, ListItemText, Stack, Typography } from "@mui/material";
+import { AppBar, Box, Button, Grid, Typography } from "@mui/material";
 import logoImage from '../../naveBarLogo/NavLogo.png';
-
+import { useNavigate } from 'react-router-dom';
+import Link from '@mui/material/Link';
 
 export default function Header() {
+    var navigate = useNavigate();
     return (
         <AppBar sx={{ backgroundColor: '#FFFFFF', position: 'static', width: '100%', maxWidth: '1920px', margin: '0 auto' }}>
             {/* <Container> */}
             <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%', width: '100%', maxWidth: '1680px', margin: '0 auto' }}>
-                <Grid container alignItems="center" >
+                <Grid container alignItems="center">
                     <Grid item xs={12} sm={1} md={1} lg={1} xl={1}>
                         <img src={logoImage} alt="Logo" style={{ width: '100%', maxWidth: 100, height: 'auto' }} />
                     </Grid>
 
                     <Grid item xs={12} sm={9} md={9} lg={9} xl={9} sx={{ display: 'flex', justifyContent: 'space-between' }}>
                         <Typography variant="body1" sx={{ color: 'black' }}>
+                            <Link onClick={() => navigate('/')} underline="none" variant="inherit">
                             Home
+                            </Link>
                         </Typography>
                         <Typography variant="body1" sx={{ color: 'black' }}>
                             Health
@@ -29,7 +33,9 @@ export default function Header() {
                             Family
                         </Typography>
                         <Typography variant="body1" sx={{ color: 'black' }}>
+                        <Link onClick={() => navigate('/food')} underline="none" variant="inherit">
                             Food
+                            </Link>
                         </Typography>
                         <Typography variant="body1" sx={{ color: 'black' }}>
                             Wellness

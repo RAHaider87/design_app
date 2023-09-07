@@ -318,15 +318,14 @@ export default function Footer() {
             <Divider style={{ backgroundColor: Colors.white, maxWidth: '1720px', margin: '0 auto', width: '100%', marginTop: '50px', marginBottom: '50px' }}></Divider>
             <Box sx={{ maxWidth: '1620px',ml:'100px',  gap: '944px', width: '100%',  height: '39px', display: 'flex'}}>
 
-                <Box  sx={{ maxWidth: '482px',  gap: '944px', width: '100%',  height: '39px'}}>
+                <Box  sx={{maxWidth: '482px',  gap: '944px', width: '100%',  height: '39px', textAlign: 'left'}}>
                     <Typography sx={{fontFamily: 'Lato', fontWeight: 400, fontSize: '24px', lineHeight: '33.6px', letterSpacing: '2%'}}>© 2023 WSH woman help squad</Typography>
                 </Box>
-                <Box sx={{maxWidth: '194px',  gap: '28px', width: '100%', height: '39px'}}>
-                    <InstagramIcon/>
-             
-                    <TwitterIcon/>
-                    <FacebookIcon/>
-                    <YouTubeIcon/>
+                <Box sx={{maxWidth: '194px',  gap: '28px', width: '100%', height: '39px', display: 'flex', alignItems:'center',justifyContent: 'center'}}>
+                    <InstagramIcon />
+                    <TwitterIcon />
+                    <FacebookIcon />
+                    <YouTubeIcon />
                 </Box>
                
             </Box>
