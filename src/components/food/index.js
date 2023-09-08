@@ -4,7 +4,7 @@ import Header from "../header/header";
 import { Colors } from "../../data";
 import foodBackground from '../../assets/food/background/backgroundFood.png';
 
-import {HealthyFood} from '../../data/food'
+import { HealthyFood } from '../../data/food'
 
 import middle1 from "../../assets/food/middlesection/1.png";
 import middle2 from "../../assets/food/middlesection/2.png";
@@ -17,7 +17,7 @@ export default function Food() {
         <Container maxWidth='1920px' sx={{ margin: '0 auto', textAlign: 'center' }}>
             <Header />
             <Box sx={{ maxWidth: '1920px', width: '100%', height: '4001px', gap: '120px', top: '100px', margin: 'auto' }}>
-                <Box sx={{ backgroundImage: `url(${foodBackground})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', maxWidth: '1920px', width: '100%', height: '900px', gap: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                <Box sx={{ backgroundImage: `url(${foodBackground})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', maxWidth: '1920px', width: '100%', height: '900px', gap: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <Box sx={{ maxWidth: '1024px', height: '231px', top: '334px', left: '448px', paddingLeft: '32px', paddingRight: '32px', gap: '32px' }}>
                         <Typography sx={{ color: Colors.white, fontFamily: 'Inter', fontWeight: 700, fontSize: '70px', lineHeight: '84.72px', alignItems: 'center' }}>Food</Typography>
                         <Typography sx={{ color: Colors.white, fontFamily: 'Roboto', fontWeight: 600, fontSize: '32px', lineHeight: '37.5px', alignItems: 'center' }}>5 Best Summer Dishes That would Keep You feeling Good</Typography>
@@ -25,47 +25,61 @@ export default function Food() {
                     </Box>
                 </Box>
 
-                <Box sx={{ maxWidth: '1920px', width: '100%', height: '2981px', gap: '120px',  backgroundColor: Colors.dim_grey, mt: 15 }}>
+                <Box sx={{ maxWidth: '1920px', width: '100%', height: '2981px', gap: '120px', mt: 15 }}>
 
-                    <Box sx={{ maxWidth: '1646px', width: '100%', height: '2300px', gap: '120px',margin: 'auto', padding: '10px', backgroundColor: Colors.denim_Blue, mb: 12  }}>
+                    <Box sx={{ maxWidth: '1646px', width: '100%', height: '2300px', gap: '120px', margin: 'auto', padding: '10px', backgroundColor: Colors.denim_Blue, mb: 12 }}>
 
-                        <Box sx={{maxWidth: '1646px', width: '100%', height: '480px', gap: '83px',  backgroundColor: Colors.green }}>
+                        <Box sx={{ maxWidth: '1646px', width: '100%', height: '480px', gap: '83px', backgroundColor: Colors.green }}>
+                            <Box sx={{ width: '458px', height: '480px', borderRadius: '10px', backgroundColor: Colors.secondary }}>
+                                <img src={middle1} alt="Logo" style={{ width: '745px', height: '420px', marginTop: '30px', marginLeft: '30px', borderRadius: '10px' }} />
+                            </Box>
+                        </Box>
 
+                        <Box sx={{ maxWidth: '1646px', width: '100%', height: '480px', gap: '83px', backgroundColor: Colors.jay_Blue, mt: 16, display: 'flex', justifyContent: 'right' }}>
+                            <Box sx={{ width: '458px', height: '480px', borderRadius: '10px', backgroundColor: Colors.secondary, display: 'flex', justifyContent: 'right' }}>
+                                <img src={middle2} alt="Logo" style={{ width: '745px', height: '420px', marginTop: '30px', marginRight: '30px', borderRadius: '10px' }} />
+                            </Box>
                         </Box>
-                        <Box sx={{maxWidth: '1646px', width: '100%', height: '480px', gap: '83px',  backgroundColor: Colors.jay_Blue, mt: 16}}>
-                            
+
+                        <Box sx={{ maxWidth: '1646px', width: '100%', height: '480px', gap: '83px', backgroundColor: Colors.purple_Blue, mt: 16 }}>
+                            <Box sx={{ width: '458px', height: '480px', borderRadius: '10px', backgroundColor: Colors.secondary }}>
+                                <img src={middle3} alt="Logo" style={{ width: '745px', height: '420px', marginTop: '30px', marginLeft: '30px', borderRadius: '10px' }} />
+                            </Box>
                         </Box>
-                        <Box sx={{maxWidth: '1646px', width: '100%', height: '480px', gap: '83px',  backgroundColor: Colors.purple_Blue, mt: 16}}>
-                            
+
+                        <Box sx={{ maxWidth: '1646px', width: '100%', height: '480px', gap: '83px', backgroundColor: Colors.russian_green, mt: 16, display: 'flex', justifyContent: 'right' }}>
+                            <Box sx={{ width: '458px', height: '480px', borderRadius: '10px', backgroundColor: Colors.secondary, display: 'flex', justifyContent: 'right' }}>
+                                <img src={middle4} alt="Logo" style={{ width: '745px', height: '420px', marginTop: '30px', marginRight: '30px', borderRadius: '10px' }} />
+                            </Box>
                         </Box>
-                        <Box sx={{maxWidth: '1646px', width: '100%', height: '480px', gap: '83px',  backgroundColor: Colors.russian_green, mt: 16}}>
-                            
-                        </Box>
+
                     </Box>
 
-                    <Box sx={{ maxWidth: '1920px', width: '100%', height: '561px', gap: '50px', backgroundColor: Colors.dove_gray  }}>
-                        <Typography sx={{color: Colors.black,fontFamily: 'Roboto',paddingBottom: '50px', fontWeight: 700, fontSize: '40px', lineHeight: '59px'}}>Healthy Food</Typography>
-                        <Box sx={{ maxWidth: '1920px', width: '100%', height: '452px',  backgroundColor: Colors.inverse, display: 'flex', justifyContent: 'center'  }}>
-                        {HealthyFood?.map((healthy) => (
-                        <Grid xs={12} sm={6} md={4} lg={4} xl={4}>
-                            <Card sx={{ maxWidth: "384px",height:'356px',width:'100%',  backgroundColor: Colors.light_Blue }} spacing={{ xs: 2, md: 3 }} justifyContent={"center"} columns={{ xs: 4, sm: 8, md: 12 }}>
-                                <CardActionArea>
-                                    <CardMedia
-                                        component="img"
-                                        height="170"
-                                        image={healthy.image}
-                                        alt="green iguana"
-                                        sx={{ borderRadius: 2 }}
-                                    />
-                                    <CardContent>
-                                        <Typography variant="title" alignItems='center' justifyContent='center' display='flex' >
-                                            {healthy.title}
-                                        </Typography>
-                                    </CardContent>
-                                </CardActionArea>
-                            </Card>
-                        </Grid>
-                    ))}
+                    <Box sx={{ maxWidth: '1920px', width: '100%', height: '561px', gap: '50px' }}>
+                        <Typography sx={{ color: Colors.black, fontFamily: 'Roboto', paddingBottom: '50px', fontWeight: 700, fontSize: '40px', lineHeight: '59px' }}>Healthy Food</Typography>
+                        <Box sx={{ maxWidth: '1920px', width: '100%', height: '452px', display: 'flex', justifyContent: 'center' }}>
+                            {HealthyFood?.map((healthy) => (
+                                // <Grid xs={12} sm={6} md={4} lg={4} xl={4}>
+                                <Card sx={{ gap: '32px', mr: '12px', ml: '12px', p: '24px', maxWidth: "384px", height: '356px', width: '100%', justifyContent: 'center' }} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                                    <CardActionArea>
+                                        <CardMedia
+                                            component="img"
+                                            maxWidth='336px'
+                                            width='100%'
+                                            height='240px'
+                                            image={healthy.image}
+                                            alt="green iguana"
+                                        // sx={{ borderRadius: 2 }}
+                                        />
+                                        <CardContent>
+                                            <Typography variant="title" sx={{ float: 'left', fontSize: '16px', fontWeight: 600, fontFamily: 'Roboto', lineHeight: '26px', mt: '35px' }} >
+                                                {healthy.title}
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                </Card>
+                                // </Grid>
+                            ))}
 
                         </Box>
 

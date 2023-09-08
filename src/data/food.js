@@ -1,6 +1,6 @@
 import healthyFood1 from "../assets/food/healthyfood/1.png";
 import healthyFood2 from "../assets/food/healthyfood/2.png";
-import healthyFood3 from "../assets/food/healthyfood/2.png";
+import healthyFood3 from "../assets/food/healthyfood/3.png";
 
 
 export const HealthyFood = [
