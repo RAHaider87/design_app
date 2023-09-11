@@ -89,11 +89,13 @@ export default function Food() {
                         width: '100%',
                         height: '561px',
                         gap: '50px',
-                        // '@media only screen and (max-width: 1300px)': {
-                        //     maxWidth: '1300px',
-                        //     width: '100%',
-                        //     height: '500px',
-                        // }
+                        backgroundColor: 'red',
+                        '@media only screen and (max-width: 1230px)': {
+                            backgroundColor: 'blue',
+                            maxWidth: '1150px',
+                            width: '100%',
+                            height: '531px',
+                        }
                     }}>
                         <Typography sx={{
                             color: Colors.black,
@@ -102,12 +104,12 @@ export default function Food() {
                             fontWeight: 700,
                             fontSize: '40px',
                             lineHeight: '59px',
-                            // '@media screen and (max-width: 1300px)': {
-                            //     paddingBottom: '40px',
-                            //     fontWeight: 600,
-                            //     fontSize: '30px',
-                            //     lineHeight: '45px',
-                            // }
+                            '@media screen and (max-width: 1230px)': {
+                                paddingBottom: '40px',
+                                fontWeight: 600,
+                                fontSize: '30px',
+                                lineHeight: '50px',
+                            }
                         }}>
                             Healthy Food
                         </Typography>
@@ -118,11 +120,11 @@ export default function Food() {
                             height: '452px',
                             display: 'flex',
                             justifyContent: 'center',
-                            // '@media screen and (max-width: 1300px)': {
-                            //     maxWidth: '1300px',
-                            //     width: '100%',
-                            //     height: '352px',
-                            // }
+                            '@media screen and (max-width: 1230px)': {
+                                maxWidth: '1150px',
+                                width: '100%',
+                                height: '422px',
+                            }
                         }}>
                             {HealthyFood?.map((healthy) => (
                                 <Card
@@ -135,15 +137,15 @@ export default function Food() {
                                         height: '356px',
                                         width: '100%',
                                         justifyContent: 'center',
-                                        // '@media screen and (max-width: 1300px)': {
-                                        //     gap: '25px',
-                                        //     mr: '8px',
-                                        //     ml: '8px',
-                                        //     p: '18px',
-                                        //     maxWidth: "200px",
-                                        //     height: '230px',
-                                        //     width: '100%',
-                                        // }
+                                        '@media screen and (max-width: 1230px)': {
+                                            gap: '26px',
+                                            mr: '9px',
+                                            ml: '9px',
+                                            p: '20px',
+                                            maxWidth: "270px",
+                                            height: '326px',
+                                            width: '100%',
+                                        }
                                     }}
                                     spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                                     <CardActionArea>
@@ -154,15 +156,13 @@ export default function Food() {
                                             maxWidth="336px"
                                             width="100%"
                                             height="240px"
-                                            // sx={{
-                                            //     '@media screen and (max-width: 1300px)': {
-                                            //         maxWidth: "200px",
-                                            //         height: '170px',
-                                            //         width: '100%',
-                                            //     }
-                                            // }}
-
-                                        // sx={{ borderRadius: 2 }}
+                                            sx={{
+                                                '@media screen and (max-width: 1230px)': {
+                                                    maxWidth: "300px",
+                                                    height: '220px',
+                                                    width: '100%',
+                                                }
+                                            }}
                                         />
                                         <CardContent>
                                             <Typography variant="title" sx={{
@@ -172,12 +172,12 @@ export default function Food() {
                                                 fontFamily: 'Roboto',
                                                 lineHeight: '26px',
                                                 mt: '35px',
-                                                // '@media screen and (max-width: 1300px)': {
-                                                //     fontSize: '14px',
-                                                //     fontWeight: 550,
-                                                //     lineHeight: '20px',
-                                                //     mt: '10px',
-                                                // }
+                                                '@media screen and (max-width: 1230px)': {
+                                                    fontSize: '15px',
+                                                    fontWeight: 570,
+                                                    lineHeight: '23px',
+                                                    mt: '25px',
+                                                }
                                             }} >
                                                 {healthy.title}
                                             </Typography>
