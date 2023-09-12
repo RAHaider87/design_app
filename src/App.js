@@ -9,12 +9,14 @@ import Wellness from './components/wellness';
 import SexAndRelationship from './components/sex&relationship';
 import Beauty from './components/beauty';
 import './App.css';
+import Blog from './components/blog';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+      <Route path='/' element={<Blog/>}></Route>
+        <Route path='/home' element={<Home/>}></Route>
         <Route path='/health' element={<Health/>}></Route>
         <Route path='/aboutUs' element={<AboutUs/>}></Route>
         <Route path='/career&finance' element={<CareerAndFinance/>}></Route>
