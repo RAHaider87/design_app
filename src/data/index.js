@@ -19,12 +19,6 @@ import article2 from "../assets/articles/2.png";
 import article3 from "../assets/articles/3.png";
 import article4 from "../assets/articles/4.png";
 
-// socials-icons
-// import { ReactComponent as Instagram } from "./assets/social-icons/instagram.svg";
-// import { ReactComponent as Facbook } from "./assets/social-icons/facebook.svg";
-// import { ReactComponent as Twitter } from "./assets/social-icons/twitter.svg";
-// import { ReactComponent as Youtube } from "./assets/social-icons/youtube.svg";
-
 
 export const Colors = {
     primary: "#5f2c3e",
@@ -39,9 +33,7 @@ export const Colors = {
     border: "#DDDFE1",
     inverse: "#2F3D4A",
     shaft: "#333",
-    //////////////
     /////////Blue
-    //////////////
     Blue: "#0000FF",
     navy_Blue: "#000080",
     denim_Blue: "#131E3A",
@@ -51,24 +43,17 @@ export const Colors = {
     cornflower_Blue: "#6495ED",
     purple_Blue: "#728FCE",
     light_Blue: "#F5FBFF",
-    //////////////
     /////////Grays
-    //////////////
     dim_grey: "#696969",
     dove_gray: "#d5d5d5",
     body_bg: "#f3f6f9",
     light_gray: "rgb(230,230,230)",
-    //////////////
     ///Solid Color
-    //////////////
     white: "#fff",
     black: "#000",
-    //////////////
     ///green Color
-    //////////////
     russian_green: "#689268",
     hunter__green: "#3F704D",
-
   };
 
  

@@ -11,9 +11,11 @@ import middle1 from "../../assets/food/middlesection/1.png";
 import middle2 from "../../assets/food/middlesection/2.png";
 import middle3 from "../../assets/food/middlesection/3.png";
 import middle4 from "../../assets/food/middlesection/4.png";
+import {containerStyle} from '../../style/food/index';
 
 
 export default function Food() {
+
     return (
         <Container maxWidth='1920px' sx={{ margin: '0 auto', textAlign: 'center' }}>
             <Header />
@@ -84,18 +86,18 @@ export default function Food() {
                         </Box>
                     </Box>
 
-                    <Box sx={{
+                    <Container style={{
                         maxWidth: '1920px',
                         width: '100%',
                         height: '561px',
                         gap: '50px',
                         backgroundColor: 'red',
-                        '@media only screen and (max-width: 1230px)': {
-                            backgroundColor: 'blue',
-                            maxWidth: '1150px',
-                            width: '100%',
-                            height: '531px',
-                        }
+                        // '@media only screen and (max-width: 1230px)': {
+                        //     backgroundColor: 'blue',
+                        //     maxWidth: '1150px',
+                        //     width: '100%',
+                        //     height: '531px',
+                        // }
                     }}>
                         <Typography sx={{
                             color: Colors.black,
@@ -104,17 +106,17 @@ export default function Food() {
                             fontWeight: 700,
                             fontSize: '40px',
                             lineHeight: '59px',
-                            '@media screen and (max-width: 1230px)': {
-                                paddingBottom: '40px',
-                                fontWeight: 600,
-                                fontSize: '30px',
-                                lineHeight: '50px',
-                            }
+                            // '@media screen and (max-width: 1230px)': {
+                            //     paddingBottom: '40px',
+                            //     fontWeight: 600,
+                            //     fontSize: '30px',
+                            //     lineHeight: '50px',
+                            // }
                         }}>
                             Healthy Food
                         </Typography>
 
-                        <Box sx={{
+                        {/* <Box sx={{
                             maxWidth: '1920px',
                             width: '100%',
                             height: '452px',
@@ -125,7 +127,8 @@ export default function Food() {
                                 width: '100%',
                                 height: '422px',
                             }
-                        }}>
+                        }}> 
+                       
                             {HealthyFood?.map((healthy) => (
                                 <Card
                                     sx={{
@@ -185,8 +188,57 @@ export default function Food() {
                                     </CardActionArea>
                                 </Card>
                             ))}
-                        </Box>
-                    </Box>
+                         </Box>  */}
+
+
+
+
+                        <Grid container
+                            style={containerStyle}>
+                            <Grid item xs={2} sm={4} md={6} lg={12} xl={12} style={{display: 'flex',justifyContent: 'center'}}>
+                                {HealthyFood?.map((healthy) => (
+                                    <Card
+                                        sx={{
+                                            gap: '32px',
+                                            mr: '12px',
+                                            ml: '12px',
+                                            p: '24px',
+                                            maxWidth: "384px",
+                                            height: '356px',
+                                            width: '100%',
+                                            justifyContent: 'center',
+                                        }}
+                                        spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                                        <CardActionArea>
+                                            <CardMedia
+                                                component="img"
+                                                image={healthy.image}
+                                                alt="green iguana"
+                                                maxWidth="336px"
+                                                width="100%"
+                                                height="240px"
+
+                                            />
+                                            <CardContent>
+                                                <Typography variant="title" sx={{
+                                                    float: 'left',
+                                                    fontSize: '16px',
+                                                    fontWeight: 600,
+                                                    fontFamily: 'Roboto',
+                                                    lineHeight: '26px',
+                                                    mt: '35px',
+
+                                                }} >
+                                                    {healthy.title}
+                                                </Typography>
+                                            </CardContent>
+                                        </CardActionArea>
+                                    </Card>
+                                ))}
+                            </Grid>
+                        </Grid>
+
+                    </Container>
                 </Box>
             </Box>
             <Footer />
