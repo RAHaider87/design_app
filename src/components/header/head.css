@@ -1,0 +1,82 @@
+.buttonBox {
+    max-width: 284px;
+    width: 100%;
+    height: 40px;
+    
+    /* @media only screen and (max-width: 1410px) {
+        max-width: 200px;
+    } */
+}
+.logoBox {
+    max-width: 124px;
+    width: 100%;
+    height: 79.85px;
+    /* @media only screen and (max-width: 1410px) {
+        max-width: 100px;
+    } */
+}
+
+.linksBox {
+    max-width: 1426px;
+    width: 100%;
+    height: 79.85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* @media only screen and (max-width: 1410px) {
+        max-width: 1320px;
+    } */
+}
+
+/* .appBar {
+    background-color: #ffffff;
+    position: static;
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100px;
+    @media only screen and (max-width: 1820px) {
+        max-width: 1800px;
+    }
+    @media only screen and (max-width: 1680px) {
+        max-width: 1680px;
+    }
+    @media only screen and (max-width: 1550px) {
+        max-width: 1560px;
+    }
+    @media only screen and (max-width: 1410px) {
+        max-width: 1440px;
+    }
+} */
+
+.contentBox {
+    margin-top: 10.7px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 79.85px;
+    width: 100%;
+    max-width: 1680px;
+    gap: 100px;
+    @media only screen and (max-width: 1820px) {
+        max-width: 1560px;
+        margin-left: 100px;
+    }
+    @media only screen and (max-width: 1680px) {
+        max-width: 1440px;
+        margin-left: 80px;
+    }
+    @media only screen and (max-width: 1550px) {
+        max-width: 1320px;
+        margin-left: 60px;
+    }
+    @media only screen and (max-width: 1410px) {
+        max-width: 1260px;
+        margin-left: 40px;
+    }
+
+}
+
+
+

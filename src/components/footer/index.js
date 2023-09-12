@@ -6,11 +6,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import '../footer/footer.css';
 
 export default function Footer() {
     return (
-        <Box sx={{ maxWidth: '1920px', margin: '0 auto', background: Colors.black, color: Colors.white, pt: 12, pb: 12, fontFamily: "Roboto", fontSize: { xs: "12px", md: "14px" } }}>
-            <Box sx={{ maxWidth: '1720px', margin: '0 auto', height: '263px', gap: '40px', width: '100%' }}>
+        <Box className='mainBox' >
+            <Box className='categoriesBox' >
 
                 <Grid container  >
 
@@ -314,20 +315,33 @@ export default function Footer() {
                         </List>
                     </Grid>
                 </Grid>
-            </Box>
-            <Divider style={{ backgroundColor: Colors.white, maxWidth: '1720px', margin: '0 auto', width: '100%', marginTop: '50px', marginBottom: '50px' }}></Divider>
-            <Box sx={{ maxWidth: '1620px',ml:'100px',  gap: '944px', width: '100%',  height: '39px', display: 'flex'}}>
 
-                <Box  sx={{maxWidth: '482px',  gap: '944px', width: '100%',  height: '39px', textAlign: 'left'}}>
-                    <Typography sx={{fontFamily: 'Lato', fontWeight: 400, fontSize: '24px', lineHeight: '33.6px', letterSpacing: '2%'}}>© 2023 WSH woman help squad</Typography>
+            </Box>
+            <Divider
+                style={{
+                    backgroundColor: Colors.white,
+                    maxWidth: '1720px',
+                    margin: '0 auto',
+                    width: '100%',
+                    marginTop: '50px',
+                    marginBottom: '50px',
+                   ' @media only screen and (max-width: 1820px)': {
+                    maxWidth: '1420px',
+                    }
+                }} />
+            <Box className='contactBox' >
+
+                <Box className='commentBox'  >
+                    <Typography sx={{ fontFamily: 'Lato', fontWeight: 400, fontSize: '24px', lineHeight: '33.6px', letterSpacing: '2%' }}>© 2023 WSH woman help squad</Typography>
                 </Box>
-                <Box sx={{maxWidth: '194px',  gap: '28px', width: '100%', height: '39px', display: 'flex', alignItems:'center',justifyContent: 'center'}}>
+
+                <Box className='iconBox' >
                     <InstagramIcon />
                     <TwitterIcon />
                     <FacebookIcon />
                     <YouTubeIcon />
                 </Box>
-               
+
             </Box>
         </Box>
     )

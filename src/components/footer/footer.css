@@ -1,0 +1,80 @@
+/* sx={{ maxWidth: '1920px', margin: '0 auto', background: Colors.black, color: Colors.white, pt: 12, pb: 12, fontFamily: "Roboto", fontSize: { xs: "12px", md: "14px" } }} */
+.mainBox{
+    max-width: 1920px;
+    width: 100%;
+    margin:  0 auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Roboto';
+   
+}
+
+/* sx={{ maxWidth: '1720px', margin: '0 auto', height: '263px', gap: '40px', width: '100%' }} */
+.categoriesBox{
+    max-width: 1720px;
+    margin:  0 auto;
+    gap: 40px;
+    width: 100%;
+}
+
+
+
+/* sx={{fontFamily: 'Lato', fontWeight: 400, fontSize: '24px', lineHeight: '33.6px', letterSpacing: '2%'}} */
+.typography{
+    font-family: 'lato';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33.6px;
+    letter-spacing: 2%;
+}
+
+/* sx={{maxWidth: '194px',  gap: '28px', width: '100%', height: '39px', display: 'flex', alignItems:'center',justifyContent: 'center'}} */
+.iconBox{
+    max-width: 194px;
+    gap: 28px;
+    width: 100%;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* sx={{maxWidth: '482px',  gap: '944px', width: '100%',  height: '39px', textAlign: 'left'}} */
+.commentBox{
+    max-width: 482px;
+    gap: 944px;
+    width: 100%;
+    height: 39px;
+    text-align: left;
+}
+
+/* style={{ backgroundColor: Colors.white, maxWidth: '1720px', margin: '0 auto', width: '100%', marginTop: '50px', marginBottom: '50px' }} */
+.divider{
+    max-width: 1720px;
+    margin:  0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 100%;
+    @media only screen and (max-width: 1820px) {
+        max-width: 1520px;
+    }
+
+}
+
+/* sx={{ maxWidth: '1620px',ml:'100px',  gap: '944px', width: '100%',  height: '39px', display: 'flex'}} */
+.contactBox{
+    max-width: 1620px;
+    margin-left: 100px;
+    gap: 944px;
+    height: 39px;
+    width: 100%;
+    display: flex;
+    @media only screen and (max-width: 1820px) {
+        max-width: 1520px;
+
+    }
+}
