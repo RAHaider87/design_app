@@ -43,7 +43,7 @@ export default function SearchBar() {
             <Paper
                 component="form"
                 sx={{ mt:'5px',ml:'5px', display: 'flex', alignItems: 'center', width: '409px', height:'42px',
-                '@media only screen and (max-width: 400px)': {
+                '@media only screen and (max-width: 420px)': {
                     width: '300px',
                 } }}
             >
