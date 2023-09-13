@@ -10,12 +10,16 @@ import SexAndRelationship from './components/sex&relationship';
 import Beauty from './components/beauty';
 import './App.css';
 import Blog from './components/blog';
+import PrivacyPolicy from './components/privacyPolicy';
+import CookiePolicy from './components/cookiePolicy';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-      <Route path='/' element={<Blog/>}></Route>
+       <Route path='/' element={<CookiePolicy/>}></Route>
+       <Route path='/privacy' element={<PrivacyPolicy/>}></Route>
+       <Route path='/blog' element={<Blog/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/health' element={<Health/>}></Route>
         <Route path='/aboutUs' element={<AboutUs/>}></Route>
