@@ -57,7 +57,7 @@
     margin:  0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.244);
     width: 100%;
     @media only screen and (max-width: 1820px) {
         max-width: 1520px;

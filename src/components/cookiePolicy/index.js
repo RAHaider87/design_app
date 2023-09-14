@@ -28,7 +28,7 @@ export default function CookiePolicy() {
                     Cookie Policy
                 </Typography>
 
-                <Box sx={{ maxWidth: '1398px', width: '100%', height: 'auto', marginTop: '36px' }}>
+                <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', marginTop: '36px' }}>
                     <Typography style={{
                         fontFamily: 'Work Sans',
                         fontWeight: 400,
@@ -45,7 +45,7 @@ export default function CookiePolicy() {
                     </Typography>
                 </Box>
 
-                <Box sx={{ maxWidth: '1398px', width: '100%', height: 'auto', gap: '10px', marginTop: '36px' }}>
+                <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '10px', marginTop: '36px' }}>
 
                     <Typography style={{
                         fontFamily: 'Work Sans',
@@ -69,7 +69,7 @@ export default function CookiePolicy() {
 
                 </Box>
 
-                <Box sx={{ maxWidth: '1398px', width: '100%', height: 'auto', marginTop: '36px' }}>
+                <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', marginTop: '36px' }}>
                     <Typography style={{
                         fontFamily: 'Work Sans',
                         fontWeight: 400,
@@ -86,7 +86,7 @@ export default function CookiePolicy() {
 
                 </Box>
 
-                <Box sx={{lineHeight:'32px', maxWidth: '1398px', width: '100%', height: 'auto', gap: '10px', marginTop: '36px' }}>
+                <Box sx={{lineHeight:'32px', maxWidth: '100%', width: '100%', height: 'auto', gap: '10px', marginTop: '36px' }}>
 
                     <Typography style={{
                         fontFamily: 'Work Sans',
@@ -112,7 +112,7 @@ export default function CookiePolicy() {
                     </Typography>
                 </Box>
 
-                <Box sx={{ maxWidth: '1398px', width: '100%', height: 'auto', marginTop: '36px' }}>
+                <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', marginTop: '36px' }}>
                     <Typography style={{
                         fontFamily: 'Work Sans',
                         fontWeight: 400,
