@@ -7,7 +7,7 @@ export default function Blog() {
 
     return (
         <Box sx={{
-            maxWidth:'1440.75px',
+            maxWidth:'100%',
             width:'100%',
             height:'auto',
             gap:'29px',

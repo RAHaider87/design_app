@@ -8,8 +8,8 @@ export default function SearchBar() {
             gap: '32px',
             height: 'auto',
             width: '100%',
-            display: 'flex',
-            flexWrap: 'wrap',
+            // display: 'flex',
+            // flexWrap: 'wrap',
             alignItems: 'center',
         }}>
             <Box sx={{
@@ -17,6 +17,7 @@ export default function SearchBar() {
                 width: '100%',
                 height: '28px',
                 display: 'flex',
+                marginBottom:'12px',
             }}>
                 <Typography sx={{
                     paddingLeft: '5px',
@@ -32,7 +33,6 @@ export default function SearchBar() {
 
             <Paper
                 sx={{
-                    
                     marginLeft: '5px',
                     display: 'flex',
                     alignItems: 'center',

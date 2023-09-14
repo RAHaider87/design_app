@@ -1,5 +1,4 @@
-import { Box, Grid } from "@mui/material";
-import { Typography } from "antd";
+import { Box, Grid, Typography } from "@mui/material";
 import bgImage1 from '../privacyPolicy/background/1.png'
 import bgImage2 from '../privacyPolicy/background/2.png'
 
@@ -16,7 +15,7 @@ export default function PrivacyPolicy() {
             backgroundRepeat: 'no-repeat',
 
         }}>
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{}}>
+            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                 <Typography style={{
                     color: '#1E293B',
                     fontFamily: 'Work Sans',

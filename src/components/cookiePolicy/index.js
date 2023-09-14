@@ -1,5 +1,4 @@
-import { Box, Grid } from "@mui/material";
-import { Typography } from "antd";
+import { Box, Grid, Typography } from "@mui/material";
 import bgImage1 from '../cookiePolicy/background/1.png'
 import bgImage2 from '../cookiePolicy/background/2.png'
 

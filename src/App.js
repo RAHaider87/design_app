@@ -12,12 +12,14 @@ import './App.css';
 import Blog from './components/blog';
 import PrivacyPolicy from './components/privacyPolicy';
 import CookiePolicy from './components/cookiePolicy';
+import TermsAndConditions from './components/termsAndconditions';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-       <Route path='/' element={<CookiePolicy/>}></Route>
+       <Route path='/' element={<TermsAndConditions/>}></Route>
+       <Route path='/cookie' element={<CookiePolicy/>}></Route>
        <Route path='/privacy' element={<PrivacyPolicy/>}></Route>
        <Route path='/blog' element={<Blog/>}></Route>
         <Route path='/home' element={<Home/>}></Route>
