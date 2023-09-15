@@ -2,11 +2,10 @@ import { Box, Typography } from "@mui/material";
 
 export default function Badge({ blog }) {
     return (
-        <Box backgroundColor={blog.textBackColor} color={blog.textColor}
+        <Box backgroundColor={blog.textBackColor} color={blog.textColor} borderRadius={blog.badgeRadius}
             sx={{
                 width: 'auto',
                 height: '28px',
-                borderRadius: '6px',
                 justifyContent: 'center',
                 alignItems: 'center',
                 paddingTop: '2px',

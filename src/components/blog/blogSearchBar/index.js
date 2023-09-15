@@ -5,14 +5,14 @@ export default function SearchBar() {
     return (
         <Box sx={{
             maxWidth: '409px',
-            gap: '32px',
+            // gap: '32px',
             height: 'auto',
             width: '100%',
             // display: 'flex',
             // flexWrap: 'wrap',
             alignItems: 'center',
         }}>
-            <Box sx={{
+            {/* <Box sx={{
                 maxWidth: '400px',
                 width: '100%',
                 height: '28px',
@@ -29,7 +29,7 @@ export default function SearchBar() {
                 }}>
                     Search Content
                 </Typography>
-            </Box>
+            </Box> */}
 
             <Paper
                 sx={{

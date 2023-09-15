@@ -101,6 +101,16 @@ export default function TermsAndConditions() {
                                     fontWeight: 400,
                                     fontSize: '16px',
                                     lineHeight: '22px',
+                                },
+                                '@media screen and (max-width: 430px)': {
+                                    fontWeight: 400,
+                                    fontSize: '14px',
+                                    lineHeight: '20px',
+                                },
+                                '@media screen and (max-width: 370px)': {
+                                    fontWeight: 400,
+                                    fontSize: '12px',
+                                    lineHeight: '18px',
                                 }
                             }}>
                                 "By accessing or using Share My Dine (or any portion of it), you acknowledge
@@ -148,6 +158,16 @@ export default function TermsAndConditions() {
                                     fontWeight: 400,
                                     fontSize: '16px',
                                     lineHeight: '22px',
+                                },
+                                '@media screen and (max-width: 430px)': {
+                                    fontWeight: 400,
+                                    fontSize: '14px',
+                                    lineHeight: '20px',
+                                },
+                                '@media screen and (max-width: 370px)': {
+                                    fontWeight: 400,
+                                    fontSize: '12px',
+                                    lineHeight: '18px',
                                 }
                             }}>
                                 <ul>

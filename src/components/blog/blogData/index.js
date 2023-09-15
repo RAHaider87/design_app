@@ -36,6 +36,7 @@ export const BlogBadgeData = [
         text: "#November",
         textColor: "#05603A",
         textBackColor: "#EEFFF4",
+        badgeRadius: "6px"
     },
 
     {
@@ -43,6 +44,7 @@ export const BlogBadgeData = [
         text: "#November2022 ",
         textColor: "#4A1FB8",
         textBackColor: "rgba(74, 31, 184, 0.07)",
+        badgeRadius: "6px"
     },
 
     {
@@ -50,6 +52,7 @@ export const BlogBadgeData = [
         text: "#novemberiscoming",
         textColor: "#9E165F",
         textBackColor: "rgba(158, 22, 95, 0.04)",
+        badgeRadius: "6px"
     },
 
     {
@@ -57,6 +60,7 @@ export const BlogBadgeData = [
         text: "#newmonthvibes",
         textColor: "#93370D",
         textBackColor: "#FEF0C74F",
+        badgeRadius: "6px"
     },
 
     {
@@ -64,5 +68,6 @@ export const BlogBadgeData = [
         text: "#newmonthnewgoals",
         textColor: "#2E4867",
         textBackColor: "#ADB5C2",
+        badgeRadius: "6px"
     },
 ]
