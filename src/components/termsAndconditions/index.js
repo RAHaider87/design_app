@@ -48,7 +48,7 @@ export default function TermsAndConditions() {
                         Share My Dine(hereafter referred to as “Company”,
                         "ShareMyDine", "Service", “we”, "us" or "our")
                         an online social platform available at
-                        https://master.dxykpmm54ipu4.amplifyapp.com which offers a
+                        (https://master.dxykpmm54ipu4.amplifyapp.com) which offers a
                         community marketplace for hosts and guests to have food events together.
                         Share My Dine connects hosts who offer their hosting skills, food and
                         facilities to guests seeking to participate in such food events/meals.
@@ -97,6 +97,11 @@ export default function TermsAndConditions() {
                                 fontSize: '18px',
                                 lineHeight: '24px',
                                 color: '#6B7280',
+                                '@media screen and (max-width: 490px)': {
+                                    fontWeight: 400,
+                                    fontSize: '16px',
+                                    lineHeight: '22px',
+                                }
                             }}>
                                 "By accessing or using Share My Dine (or any portion of it), you acknowledge
                                 that you have read and understood the following Terms of Use including
@@ -138,7 +143,12 @@ export default function TermsAndConditions() {
                                 fontWeight: 400,
                                 fontSize: '18px',
                                 lineHeight: '32px',
-                                color: '#6B7280'
+                                color: '#6B7280',
+                                '@media screen and (max-width: 490px)': {
+                                    fontWeight: 400,
+                                    fontSize: '16px',
+                                    lineHeight: '22px',
+                                }
                             }}>
                                 <ul>
                                     <li>
