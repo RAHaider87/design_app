@@ -4,7 +4,7 @@ import { ReactComponent as Search } from "../blogAssets/BlogCardImages/search-st
 export default function SearchBar() {
     return (
         <Box sx={{
-            maxWidth: '409px',
+            maxWidth: '100%',
             // gap: '32px',
             height: 'auto',
             width: '100%',

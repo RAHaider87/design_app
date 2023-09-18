@@ -14,12 +14,16 @@ import PrivacyPolicy from './components/privacyPolicy';
 import CookiePolicy from './components/cookiePolicy';
 import TermsAndConditions from './components/termsAndconditions';
 import MessageChefs from './components/chefs/messageChefs';
+import ChefCard from './components/chefsCard';
+import ChefsCard from './components/chefsCard';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-       <Route path='/' element={<MessageChefs/>}></Route>
+       <Route path='/' element={<ChefsCard/>}></Route>
+
+       <Route path='/message' element={<MessageChefs/>}></Route>
        <Route path='/terms' element={<TermsAndConditions/>}></Route>
        <Route path='/cookie' element={<CookiePolicy/>}></Route>
        <Route path='/privacy' element={<PrivacyPolicy/>}></Route>

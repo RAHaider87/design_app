@@ -1,24 +1,17 @@
-import { AppBar, Box, Button, Container, Grid, Typography, colors } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import logoImage from '../../naveBarLogo/NavLogo.png';
 import { useNavigate, useLocation } from 'react-router-dom';
 import Link from '@mui/material/Link';
-import { Colors } from "../../data";
 import "../header/head.css";
 
 export default function Header() {
     const navigate = useNavigate();
     const location = useLocation();
-
     const isRouteActive = (path) => {
         return location.pathname === path;
     };
 
     return (
-
-
-
-
-
 
         // '@media only screen and (max-width: 1820px)': {
         //     maxWidth: '1800px',
@@ -33,46 +26,42 @@ export default function Header() {
         //     maxWidth: '1440px',
         // }
 
-
         <Grid container sx={{
-            backgroundColor: Colors.Blue,
             position: 'static',
             maxWidth: '1920px',
             width: '100%',
             height: '100px',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center', 
-            margin:'auto'
-
-
+            alignItems: 'center',
+            margin: 'auto'
         }}>
             <Grid item sx={{
                 maxWidth: '1680px',
                 width: '100%',
                 height: '79.80px',
-                backgroundColor: Colors.denim_Blue,
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center'
-
             }}>
-
                 <Grid item xs={2} sm={2} md={2} lg={2} xl={2} sx={{
                     maxWidth: '124px',
                     width: '100%',
                     height: '79.80px',
-                    backgroundColor:Colors.green
+                    display: 'flex',
+                    justifyContent: 'left'
                 }}>
-                    <img src={logoImage} alt="Logo" style={{ width: '100%', height: '100%' }} />
+                    <img src={logoImage} alt="Logo" style={{ width: '154px', height: '100%' }} />
                 </Grid>
-
                 <Grid item xs={10} sm={10} md={10} lg={10} xl={10} sx={{
                     display: 'flex',
-                    justifyContent: 'center',
+                    justifyContent: 'space-between',
                     alignItems: 'center',
-                    backgroundColor:Colors.russian_green
+                    '&:hover': {
+                        cursor: 'pointer',
+                    },
                 }} >
+                    
                     <Typography variant="body1"
                         sx={{
                             color: isRouteActive('/') ? '#FD6288' : 'black'
@@ -153,18 +142,23 @@ export default function Header() {
                             Beauty
                         </Link>
                     </Typography>
-                    {/* Other navigation items */}
-                    <Box className='buttonBox'>
-                        <Button variant="contained"  >
-                            Login
-                        </Button>
-                        <Button variant="outlined" sx={{ ml: '18px' }}>SignUp</Button>
+
+                    <Box sx={{
+                        maxWidth: '284px',
+                        width: '100%',
+                        height: '40px',
+                        alignItems: 'end',
+                        display: 'flex',
+                        justifyContent: 'end',
+                        alignItems: 'center',
+                        gap: '16px',
+                    }}>
+                        <Button variant="contained">Login</Button>
+                        <Button variant="outlined">SignUp</Button>
                     </Box>
+
                 </Grid>
             </Grid>
-
         </Grid >
-
-
     )
 }

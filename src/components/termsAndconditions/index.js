@@ -78,7 +78,6 @@ export default function TermsAndConditions() {
                         backgroundSize: 'auto',
                         backgroundRepeat: 'no-repeat',
                     }}>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '16' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -136,7 +135,6 @@ export default function TermsAndConditions() {
                             </Typography>
 
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '16', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -237,9 +235,7 @@ export default function TermsAndConditions() {
                                     </li>
                                 </ul>
                             </Typography>
-
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '12', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -295,13 +291,10 @@ export default function TermsAndConditions() {
                         </Box>
                     </div>
 
-
-
                     <div style={{
                         background: `url(${bgImage3}) left top no-repeat`,
                         backgroundSize: 'auto',
                     }}>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -412,7 +405,6 @@ export default function TermsAndConditions() {
                                 shall be available to other Users on Share My Dine and all Internet users.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -457,7 +449,6 @@ export default function TermsAndConditions() {
                             </Typography>
 
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -539,13 +530,11 @@ export default function TermsAndConditions() {
                         </Box>
                     </div>
 
-
                     <div style={{
                         background: `url(${bgImage2}) right top no-repeat`,
                         backgroundSize: 'auto',
                         backgroundRepeat: 'no-repeat',
                     }}>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -605,7 +594,6 @@ export default function TermsAndConditions() {
                                 </div>
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -635,7 +623,6 @@ export default function TermsAndConditions() {
                             </Typography>
 
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -666,7 +653,6 @@ export default function TermsAndConditions() {
                             </Typography>
 
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -750,13 +736,11 @@ export default function TermsAndConditions() {
                         </Box>
                     </div>
 
-
                     <div style={{
                         background: `url(${bgImage3}) left top no-repeat`,
                         backgroundSize: 'auto',
                         backgroundRepeat: 'no-repeat',
                     }}>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -798,7 +782,6 @@ export default function TermsAndConditions() {
                                 confusingly similar to any of Share My Dine's marks and logos, whether registered or not.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -954,7 +937,6 @@ export default function TermsAndConditions() {
 
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1007,7 +989,6 @@ export default function TermsAndConditions() {
 
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1037,7 +1018,6 @@ export default function TermsAndConditions() {
                                 the Company Trademarks or the Third Party Marks and therefore you will avoid using any of those marks.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1072,16 +1052,13 @@ export default function TermsAndConditions() {
                                 such documents carefully before using those sites.
                             </Typography>
                         </Box>
-
                     </div >
-
 
                     <div style={{
                         background: `url(${bgImage2}) right top no-repeat`,
                         backgroundSize: 'auto',
                         backgroundRepeat: 'no-repeat',
                     }}>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1104,7 +1081,6 @@ export default function TermsAndConditions() {
                                 The Company may integrate commercials, advertisements and/or sponsored links, whether within or beside Share My Dine. By clicking the advertisements you may be transferred to a website of an advertiser or receive any other messages, information or offers from the advertiser and from others. All the information contained in such commercials and advertisements belongs solely to the advertisers and the Company makes no warranties or representations as to such advertisements, whether or not the Company has control over such advertisements. The Company, advertisers and/or third-parties related thereto may be entitled to certain shares of the earnings for such commercials. You agree, acknowledge and consent that no right, title or interest is or shall be granted to you in any way with respect to any revenue share whatsoever in relation thereto, whether as a paying User or not.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1127,7 +1103,6 @@ export default function TermsAndConditions() {
                                 Share My Dine's availability and functionality depends on various factors, such as communication networks, software, hardware and the Company's services' providers and contractors. The Company does not warrant or guarantee that Share My Dine will operate at all times without disruption or interruption, or that it will be immune from unauthorized access or error-free.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1150,7 +1125,6 @@ export default function TermsAndConditions() {
                                 The Company may change Share My Dine's layout and design from time to time, and the availability of the content and services included therein, without giving any prior notice on Share My Dine. You hereby agree and acknowledge that the Company is not responsible for any errors or malfunctions that may occur in connection with the performing of such changes.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1173,7 +1147,6 @@ export default function TermsAndConditions() {
                                 At any time, you may change, edit, correct or delete any and all information included in your personal profile. For the cancellation and removal of your account from Share My Dine and on any matters that extend the usual management of your account, you may contact the Company at: support@Share My Dine.com with such specific request. Company shall terminate your account and remove any information pertaining to you from the Service within reasonable time upon receiving your request for account cancellation. We will attempt to comply with any request to the best of our capabilities.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1199,7 +1172,6 @@ export default function TermsAndConditions() {
                                 THE COMPANY HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE USE OF SHARE MY DINE, INCLUDING BUT NOT LIMITED TO THE AVAILABILITY, RELIABILITY, OR QUALITY OF SHARE MY DINE AND/OR THE FOOD EVENTS DISTRIBUTED THROUGH SHARE MY DINE, INCLUDING THE NATURE AND QUALITY OF THE FOOD SERVED IN SUCH EVENTS, AND IS NOT AND SHALL NOT BE RESPONSIBLE FOR ANY ERROR, FAULT OR MISTAKE OF ANY AND ALL CONTENT AND INFORMATION RECEIVED THROUGH SHARE MY DINE, INCLUDING BY HOSTS OR GUESTS. THE COMPANY DOES NOT ENDORSE ANY ENTITY, PRODUCT OR SERVICE MENTIONED IN ANY USER GENERATED CONTENT AVAILABLE ON SHARE MY DINE.<br />
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1229,20 +1201,7 @@ export default function TermsAndConditions() {
                                 LIABILITY FOR DAMAGES SHALL BE LIMITED TO YOUR RESERVATION FEES.
                             </Typography>
                         </Box>
-
                     </div>
-
-
-                    {/* <div style={{
-                        background: `url(${bgImage2}) left top no-repeat`,
-                        backgroundSize: 'auto',
-                        backgroundRepeat: 'no-repeat',
-                    }}>
-
-
-
-                    </div> */}
-
 
                     <div style={{
                         background: `url(${bgImage3}) left top no-repeat`,
@@ -1278,7 +1237,6 @@ export default function TermsAndConditions() {
                                 relation to Share My Dine. It is hereby clarified that this defense and indemnification obligation will survive these Terms.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1317,7 +1275,6 @@ export default function TermsAndConditions() {
                                 is allegedly infringed. The Company's Copyright Agent can be reached through the address specified above.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1340,7 +1297,6 @@ export default function TermsAndConditions() {
                                 The Company may change the Terms from time to time, including the Privacy Policy or any other policies incorporated thereto. Substantial changes will be first notified at Share My Dine's homepage. In the event that the Terms should be amended to comply with any legal requirements, the amendments may take effect even immediately, or as required by the law and without any prior notice. You hereby agree and acknowledge to accept any and to be bound by any of the changes made in the Terms and the accompanying policies. Should you continue to use Share My Dine after the changes were made, it will indicate your acceptance to the new Terms. You are recommended to review the Terms from time to time, as they may change every once in a while.
                             </Typography>
                         </Box>
-
                         <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', gap: '24', marginTop: '78px' }}>
                             <Typography sx={{
                                 fontFamily: 'Work Sans',
@@ -1455,11 +1411,7 @@ export default function TermsAndConditions() {
 
                             </Typography>
                         </Box>
-
                     </div>
-
-
-
                 </Grid>
             </Grid>
         </>
