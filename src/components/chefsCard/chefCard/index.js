@@ -1,5 +1,6 @@
 import { Box, Grid , Typography} from "@mui/material";
 import icon from '../chefAssets/icon.svg'
+import ChefTitle from "../chefTitle";
 
 export default function ChefCard({ card, index }) {
     return (
@@ -47,6 +48,7 @@ export default function ChefCard({ card, index }) {
                 }}>
                     <img src={card.image} alt="Log" style={{ width: '100%', height: '100%' }} />
                 </Box>
+                
 
                 <Box sx={{
                     maxWidth: '196.44',
@@ -59,34 +61,7 @@ export default function ChefCard({ card, index }) {
                     alignItems: 'center',
                     margin: '23.37px auto'
                 }}>
-                    <Typography style={{
-                        maxWidth: '100%',
-                        width: '100%',
-                        height: 'auto',
-                        fontFamily: 'Work Sans',
-                        fontWeight: 500,
-                        fontSize: '20.95px',
-                        lineHeight: '25.14px',
-                        color: '#292D32',
-                        textAlign: 'center'
-                    }}>
-                        {card.title}
-                    </Typography>
-
-                    <Typography style={{
-                        maxWidth: '100%',
-                        width: '100%',
-                        height: 'auto',
-                        fontFamily: 'Work Sans',
-                        fontWeight: 300,
-                        fontSize: '13.95px',
-                        lineHeight: '20.95px',
-                        color: '#FF611D',
-                        textAlign: 'center'
-                    }}>
-                        <span style={{ color: '#292D32' }}>From </span>
-                        {card.subTitle}
-                    </Typography>
+                    <ChefTitle card={card}/>
 
                     <Typography style={{
                         marginTop: '6.07px',

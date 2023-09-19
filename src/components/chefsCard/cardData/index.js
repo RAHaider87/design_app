@@ -36,10 +36,13 @@ export const ChefCardData = [
         subTitle: "Croydon",
         discription: "Expert in making traditional Croydon dishes.",
         image: chef1,
+        price: 'From £65pp / £325 min spend',
+        textPosition:'center',
+
 
         profileimage: nancy1,
 
-        Dietaries: [
+        Dietaries:[
             {
                 id: "1",
                 text: "Halal",
@@ -137,6 +140,7 @@ export const ChefCardData = [
         subTitle: "Croydon",
         discription: "Expert in making traditional Crispi Pork Belly.",
         image: chef2,
+        price: 'From £46pp / £325 min spend',
 
         profileimage: albert1,
 
@@ -246,7 +250,7 @@ export const ChefCardData = [
         subTitle: "Holland",
         discription: "Expert in making traditional Sushi Food.",
         image: chef3,
-
+        price: 'From £85pp / £325 min spend',
       
         profileimage: allessio1,
 
@@ -370,6 +374,7 @@ export const ChefCardData = [
         subTitle: "Warwick",
         discription: "Expert in making traditional South Indian food.",
         image: chef4,
+        price: 'From £96pp / £325 min spend',
 
         profileImage: allessio1,
 
@@ -458,6 +463,7 @@ export const ChefCardData = [
         subTitle: "Croydon",
         discription: "Expert in making traditional Crispi Pork Belly.",
         image: chef2,
+        price: 'From £46pp / £325 min spend',
 
         profileimage: albert1,
 
@@ -567,6 +573,7 @@ export const ChefCardData = [
         subTitle: "Croydon",
         discription: "Expert in making traditional Croydon dishes.",
         image: chef1,
+        price: 'From £65pp / £325 min spend',
 
         profileimage: nancy1,
 
@@ -668,6 +675,7 @@ export const ChefCardData = [
         subTitle: "Holland",
         discription: "Expert in making traditional Sushi Food.",
         image: chef3,
+        price: 'From £85pp / £325 min spend',
 
         profileimage: allessio1,
 
