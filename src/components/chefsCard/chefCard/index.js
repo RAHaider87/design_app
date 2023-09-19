@@ -1,8 +1,5 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid , Typography} from "@mui/material";
 import icon from '../chefAssets/icon.svg'
-import { Colors } from "../../../data";
-import { ChefCardData } from '../cardData/index'
-import { Typography } from "antd";
 
 export default function ChefCard({ card, index }) {
     return (
@@ -21,6 +18,7 @@ export default function ChefCard({ card, index }) {
             },
             '&:hover': {
                 transform: 'scale(1.05)',
+                cursor:'pointer',
             },
         }}>
             <Grid item sx={{
