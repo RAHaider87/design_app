@@ -9,8 +9,7 @@ export default function ChefBadge({ badge }) {
             width: '100%',
             height: 'auto',
             gap: '62px',
-       
-
+    
         }}>
             <Grid items sx={{
                 maxWidth: '100%',
@@ -18,7 +17,7 @@ export default function ChefBadge({ badge }) {
                 height: '100%',
             }} >
                 <Box sx={{
-                    maxWidth: '164px',
+                    maxWidth: 'auto',
                     width: '100%',
                     height: 'auto',
                     marginRight: 'auto'
@@ -48,7 +47,7 @@ export default function ChefBadge({ badge }) {
                         Dietaries
                     </Typography>
                     <Box sx={{ maxWidth: '100%', width: '100%', height: 'auto', display: 'flex', flexWrap: 'wrap' }}>
-                        {badge?.Dietaries?.map((e) => (
+                        {badge.Dietaries.map((e) => (
                             <Badge blog={e} />
                         ))}
                     </Box>
@@ -74,7 +73,7 @@ export default function ChefBadge({ badge }) {
                         Cuisines
                     </Typography>
                     <Box sx={{ maxWidth: '100%', width: '100%', height: '100%', display: 'flex', flexWrap: 'wrap' }}>
-                        {badge?.cuisines?.map((e) => (
+                        {badge.cuisines.map((e) => (
                             <Badge blog={e} />
                         ))}
                     </Box>

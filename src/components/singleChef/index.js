@@ -7,7 +7,6 @@ import ChefAlbum from "./chefAlbum";
 export default function SingleChef() {
     return (
         <>
-
             <Grid container sx={{
                 maxWidth: '1390px',
                 width: '100%',
@@ -15,19 +14,10 @@ export default function SingleChef() {
                 borderRadius: '12px',
                 border: 'solid 1px #C4C4C47A',
                 display: 'flex',
-                
-                        '@media screen and (max-width: 1380px)': {
-                            height: 'auto',
-                        },
+                '@media screen and (max-width: 1380px)': {
+                    height: 'auto',
+                },
             }}>
-                {/* <Grid item xs={12} sm={12} md={12} lg={12} xl={12} sx={{
-                    maxWidth: '100%',
-                    width: '100%',
-                    height: '100%',
-
-
-                }}> */}
-
                 <Grid item xs={12} sm={12} md={5} lg={5} xl={5} >
                     <Box sx={{
                         maxWidth: '516px',
@@ -66,7 +56,7 @@ export default function SingleChef() {
                         display: 'flex',
                         marginLeft: 'auto',
                         '@media screen and (max-width: 900px)': {
-                            marginTop: '10px'
+                            marginTop: '10px',
                         },
                     }}>
                         <Typography sx={{
@@ -86,76 +76,50 @@ export default function SingleChef() {
                         </Typography>
                     </Box>
                     <Box sx={{
+                        marginLeft: '30px',
                         '@media screen and (max-width: 900px)': {
                             display: 'flex',
-                            flexDirection: 'column',
+                            justifyContent: 'center',
                             alignItems: 'center',
                             marginTop: '10px',
+                            marginTop: '50px',
                         },
                     }}>
-
-                        <Box sx={{
-                            marginLeft: '30px',
-                            '@media screen and (max-width: 900px)': {
-                                marginLeft: '0px',
-                            },
-                        }}>
-                            <ChefBadge badge={ChefCardData[0]} />
-                        </Box>
-
+                        <ChefBadge badge={ChefCardData[0]} />
                     </Box>
                     <Box sx={{
                         marginTop: '62px',
                         marginLeft: '30px',
+
                         '@media screen and (max-width: 1350px)': {
                             marginRight: '30px',
-
-
                         },
                         '@media screen and (max-width: 900px)': {
-                            marginLeft: '50px',
-                            //marginRight: '50px',
-                            marginTop: '20px'
-
+                            paddingLeft: '25px',
+                            paddingRight: '25px',
                         },
                     }}>
                         <MessageChefs />
                     </Box>
+
                     <Box sx={{
                         display: 'flex',
                         justifyContent: 'center',
-                        flexDirection: 'column',
-                        alignItems: 'center'
-                    }}>
-
-
-                        <Box sx={{
-                            // maxWidth: 'auto',
-                            // width: '100%',
-                            // height: 'auto',
-                            display: 'flex',
-                            // flexWrap: 'wrap',
-                            marginBottom: '-400px',
-                            marginLeft:'-400px',
-                            '@media screen and (max-width: 1380px)': {
-                                marginBottom: '0px',
-                                marginTop:'50px',
-                            marginLeft:'0px',
+                        marginBottom: '-400px',
+                        marginLeft: '-400px',
+                        '@media screen and (max-width: 1380px)': {
+                            marginBottom: '0px',
+                            marginTop: '50px',
+                            marginLeft: '0px',
                             flexWrap: 'wrap',
-                            justifyContent:'center'
-                            },
-
-
-                        }}>
-                            {ChefCardData[0]?.album?.map((e) => (
-                                <ChefAlbum image={e} />
-                            ))}
-                        </Box>
-
+                        },
+                    }}>
+                        {ChefCardData[0]?.album?.map((e) => (
+                            <ChefAlbum image={e} />
+                        ))}
                     </Box>
 
                 </Grid>
-                {/* </Grid> */}
             </Grid>
         </>
     )

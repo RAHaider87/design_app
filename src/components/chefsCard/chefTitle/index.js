@@ -12,12 +12,12 @@ export default function ChefTitle({card,singleChef}){
                 width: '100%',
                 height: 'auto',
                 fontFamily: 'Work Sans',
-                fontWeight: 500,
-                fontSize: '20.95px',
-                lineHeight: '25.14px',
                 color: '#292D32',
+                fontWeight: (singleChef === true) ? 700 : 500,
+                fontSize: (singleChef === true) ? '28px' : '20.95px',
+                lineHeight: (singleChef === true) ? '33.6px' : '25.14px',
                 textAlign: (singleChef === true) ? 'left' : 'center',
-                // : 'center'
+                
             }}>
                 {card.title}
             </Typography>
@@ -27,11 +27,12 @@ export default function ChefTitle({card,singleChef}){
                 width: '100%',
                 height: 'auto',
                 fontFamily: 'Work Sans',
-                fontWeight: 300,
-                fontSize: '13.95px',
-                lineHeight: '20.95px',
                 color: '#FF611D',
-               // textAlign: 'center'
+                marginTop: (singleChef === true) ? '12px' : '0.32px',
+                fontWeight: (singleChef === true) ? 500 : 300,
+                fontSize: (singleChef === true) ? '24px' : '13.95px',
+                lineHeight: (singleChef === true) ? '20.95px' : '20.95px',
+                textAlign: (singleChef === true) ? 'left' : 'center',
             }}>
                 <span style={{ color: '#292D32' }}>From </span>
                 {card.subTitle}

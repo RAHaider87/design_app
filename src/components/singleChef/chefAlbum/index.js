@@ -9,7 +9,7 @@ export default function ChefAlbum({image}) {
             borderRadius:'8px'
 
         }}>
-            <img src={image.albumImage} alt="Logo" style={{maxWidth: '100%', width: '100%', height: '100%' }} />
+            <img src={image.albumImage} alt="Lg" style={{maxWidth: '100%', width: '100%', height: '100%' }} />
         </Box>
     )
 }
